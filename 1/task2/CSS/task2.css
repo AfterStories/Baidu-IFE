@@ -1,0 +1,148 @@
+body{
+    font-family: "黑体";
+    font-size: 14px;
+    margin: 0px;
+    border: 0px;
+    background: rgba(233, 233, 233, 0.85);
+}
+
+header{
+    height:50px;
+    width:100%;
+    background:#000000;
+    vertical-align: middle;
+    display: table;
+}
+#logo{
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 35px;
+}
+header img{
+    margin-left: 35px;
+}
+
+nav,nav ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li{
+    line-height: 50px;
+    float: left;
+    margin-right: 25px;
+}
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+h1{
+    font-family: 黑体;
+    color: rgba(255, 255, 255, 0);
+}
+
+article,aside,.photo{
+    margin:20px 50px;
+    background-color: #FFF;
+    padding: 20px;
+    line-height: 1.5;
+    box-shadow: 2px 2px 2px #848484;
+    min-width: 300px;
+}
+
+figure {
+    border:1px solid #848484;
+    height:240px;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+figcaption{
+    padding: 10px;
+}
+figure>img{
+    height: 220px;
+    width: 280px;
+}
+
+table{
+    width: 100%;
+    margin: 0 auto;
+    border-color: #ccc;
+    border-collapse:collapse;
+}
+th{
+    color: white;
+    background: #333;
+}
+tfoot{
+    background: #ccc;
+}
+
+aside h3{
+    padding-left: 10px;
+}
+
+form{
+    width: 100%
+}
+#user{
+    padding-right: 50px;
+    width: 500px;
+}
+
+#user .message{
+    text-align:right;
+    margin-right: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+
+}
+.email{
+    font-size: 13px;
+    text-align:right;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-right:10px;
+}
+.user2{
+    margin-left: 24.8%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 800px;
+    text-align:left;
+    vertical-align: middle;
+}
+.user2 input{
+    margin: 10px;
+}
+textarea{
+    vertical-align: bottom;
+    margin-top: 10px;
+    width: 57%;
+    height: 100px;
+}
+input[type='submit']{
+    width: 100%;
+    height: 40px;
+    background: #3355D0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 60px;
+}
