@@ -1,0 +1,163 @@
+body{
+    font-family: "黑体";
+    font-size: 14px;
+    margin: 0px;
+    border: 0px;
+    background: rgba(233, 233, 233, 0.85);
+}
+
+header{
+    height:50px;
+    width:100%;
+    background:#000000;
+    vertical-align: middle;
+    display: table;
+}
+#logo{
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 35px;
+}
+header img{
+    margin-left: 35px;
+}
+
+nav,nav ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li{
+    line-height: 50px;
+    float: left;
+    margin-right: 25px;
+}
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+h1{
+    font-family: 黑体;
+    color: rgba(255, 255, 255, 0);
+}
+
+article,.photo{
+    margin:40px 450px 20px 20px;
+    background-color: #FFF;
+    padding: 20px;
+    line-height: 1.5;
+    box-shadow: 2px 2px 2px #848484;
+    min-width: 400px;
+}
+aside{
+    margin:90px 20px;
+    background-color: #FFF;
+    padding: 20px;
+    line-height: 1.5;
+    box-shadow: 2px 2px 2px #848484;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+}
+
+figure {
+    border:1px solid #848484;
+    height:100px;
+    width: 140px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+figcaption{
+    padding: 10px;
+}
+figure>img{
+    height: 80px;
+    width: 120px;
+}
+
+table{
+    width: 100%;
+    margin: 0 auto;
+    border-color: #ccc;
+    border-collapse:collapse;
+}
+th{
+    color: white;
+    background: #333;
+}
+tfoot{
+    background: #ccc;
+}
+
+aside h3{
+    padding-left: 10px;
+}
+
+form{
+    width: 100%
+}
+#user{
+
+    width: 350px;
+
+}
+.user2{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 350px;
+    text-align:left;
+    vertical-align: middle;
+
+}
+#user .message{
+    text-align:right;
+    margin-right: 50px;
+    margin-top: 10px;
+    vertical-align: middle;
+
+}
+.email{
+    font-size: 13px;
+    text-align:right;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-right:50px;
+}
+
+.user2 input{
+    margin: 10px;
+}
+
+textarea{
+    vertical-align: bottom;
+    margin-top: 5px;
+    width: 260px;
+    height: 100px;
+}
+input[type='submit']{
+    width: 100%;
+    height: 40px;
+    background: #3355D0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 60px;
+}
