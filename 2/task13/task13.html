@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+</head>
+<body>
+
+<label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+<button id="button">确认填写</button>
+
+<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+
+    (function() {
+        /*
+         在注释下方写下代码
+         给按钮button绑定一个点击事件
+         在事件处理函数中
+         获取aqi-input输入的值，并显示在aqi-display中
+         */
+        var button = document.getElementById("button");
+        var air = document.getElementById("aqi-input");
+        var show =document.getElementById("aqi-display");
+        button.onclick = function(){
+            if (air.value){             /* 如果input的value是空字符串的话执行if里面的语句。
+
+                                         因为js中空字符串在条件判断的时候相当于false，所以非false就是                                             true了。*/
+               show.innerHTML = air.value;
+            }
+            else{
+                alert("您还没输入！")
+            }
+        }
+
+/* 从别人那学习到的方法，判断输入的内容是否为数值
+        document.getElementById('aqi-display').innerHTML =
+                isNaN(
+                        num = Number(document.getElementById('aqi-input').value.trim() || '~')
+                ) ? '请输入数值' : num;*/
+
+    })();
+
+
+
+</script>
+</body>
+</html>
