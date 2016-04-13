@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASK 29</title>
+    <style>
+        .name{
+            display: flex;
+            width: 50%;
+            height: 300px;
+            justify-content: center;
+            align-content: center;
+            align-items:center;
+            margin: 50px auto;
+            padding: 10px;
+
+
+        }
+        input {
+            width: 250px;
+            height: 32px;
+            border-radius: 5px;
+            border-color: #ccc;
+        }
+        button {
+            background-color: #2563AD;
+            color: #fff;
+            height: 40px;
+            width: 90px;
+            font-size: 24px;
+            border: none;
+            border-radius: 5px;
+        }
+        #info {
+            color: #ccc;
+            font-size: 20px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+<h1>任务二十九：表单（一）单个表单项的检验</h1>
+<p>在页面中实现一个输入框与按钮，要求点击验证按钮后，对输入框中内容进行格式校验，并在其下方显示校验结果
+    校验规则：
+<ul>
+    <li>字符数为4~16位</li>
+    <li>每个英文字母、数字、英文符号长度为1</li>
+    <li>每个汉字，中文符号长度为2</li>
+</ul>
+</p>
+<div class="name">
+
+    <fieldset>
+        <legend>姓名验证合法性</legend>
+            <table>
+            <tr>
+                <td>名称</td>
+                <td><input type="text"></td>
+                <td><button>验证</button></td>
+             </tr>
+             <tr>
+                <td></td>
+                <td id="info">必填，长度为4~16个字符</td>
+                <td></td>
+               </tr>
+              </table>
+    </fieldset>
+
+</div>
+
+</body>
+<script>
+    var inputName = document.getElementsByTagName('input')[0]
+    var waringWord =  document.getElementById('info');
+    var btn =document.getElementsByTagName('button')[0]
+
+    function nameLength(name){
+        var inputLength = 0
+        for(var i =0 ;i<name.length;i++){
+            var countCode = name.charCodeAt(i);
+            if (countCode>=0 && countCode<=128){
+                inputLength+=1;
+            }else{
+                inputLength+=2;
+            }
+        }return inputLength;
+    }
+
+    btn.onclick = validate;
+
+    function validate(){
+        var inputValue = inputName.value;
+        if(nameLength(inputValue)== 0){
+            waringWord.innerHTML = '大兄弟你还妹有输入内容腻！';
+            waringWord.style.color= 'red';
+            inputName.style.border = '1px solid red';
+        }else if(nameLength(inputValue)>=4&&nameLength(inputValue)<=16){
+            waringWord.innerHTML='行吧，输的合法';
+            waringWord.style.color= 'green';
+            inputName.style.border = '1px solid lightgreen';
+        }else {
+            waringWord.innerHTML='你得输入长度4~16的字符';
+            waringWord.style.color='red';
+            inputName.style.border='1px solid red';
+        }
+    }
+
+ </script>
+</html>
