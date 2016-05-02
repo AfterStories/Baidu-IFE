@@ -36,11 +36,10 @@ function addAqiData() {
  */
 function renderAqiList() {
     var showtable = "<tr><td>城市</td><td>空气质量</td><td>操作</td></tr>";
-    for(var city in aqiData){                                /* for...in 语句  for...in 语句用于对数组或者对象的属性进行循环操作。
-     for ... in 循环中的代码每执行一次，就会对数组的元素或者对象的属性进行一次操作。*/
+    for(var city in aqiData){
         showtable += "<tr><td>"+city+"</td><td>"+aqiData[city]+"</td><td><button data-city='"+city+"'>删除</button></td></tr>"
-    }         /* HTML5中添加了的data-*的方式来自定义属性，可以添加在任意HTML标签中储存，读写数据，利用dateset对象来操作，此处知识点已在笔记中做学习记录*/
-    document.getElementById("aqi-table").innerHTML = city ? showtable : "";//判断是否有city内容，如有则打印内容，没有则为空
+    }
+    document.getElementById("aqi-table").innerHTML = city ? showtable : "";
 }
 
 function addBtnHandle() {

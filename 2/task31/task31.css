@@ -1,0 +1,54 @@
+body {
+      font-size: 30px;
+      font-family: 'Microsoft yahei';
+}
+#whereAreyou{
+	width: 800px;
+	margin:auto;
+	padding: 80px;		
+    
+    text-align: center;
+}
+
+input{
+	border: 2px solid ##a8a8a8;
+	font-size: 25px;
+	border-radius: 8px;
+	outline: none;
+}
+
+.student-or-no{
+	display: inline-block;
+    margin-left: 100px;
+}
+
+select {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 160px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                
+}
+
+.selectbox span{
+				width: auto;
+                height: 50px;
+                margin-right: 15px;
+                margin-left: 85px;
+                margin-top: 15px;
+}
+
+.hide{
+                display: none;
+        }    
+

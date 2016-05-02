@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>task31</title>
+	<link rel="stylesheet" href="task31.css" />
+</head>
+<body>
+	<div id="whereAreyou">
+		
+					<div class="student-or-no" >
+			<label>
+                <input type="radio"  name="optionsRadios" id="inSchoolRadio" checked onclick="radioChange()"> 在校生
+            </label>
+		</div>
+		<div class="student-or-no">
+			<label>
+                <input type="radio" name="optionsRadios" id="outSchoolRadio" onclick="radioChange()"> 非在校生
+            </label>
+		</div>
+		
+		
+
+		<div class="selectbox">
+			<div class="inSchool">
+                <span>学校</span>
+                    <select class="select" id="select1" onchange="selectschool()">
+                        <option value="beijing">北京</option>
+                        <option value="shanghai">上海</option>
+                        <option value="zhejiang">杭州</option>
+                    </select>
+                    
+                    <select class="select" id="select2">
+                        <option value="pku">北京大学</option>
+                        <option value="thu">清华大学</option>
+                        <option value="bhu">北京航空航天大学</option>
+                    </select>
+            </div>
+				
+			
+					<div class="outSchool hide">
+                    	<span>就业单位</span>
+                    	<input type="text" class="input" placeholder="请填写公司名称">    
+            		</div>        
+            
+		</div>
+	</div>
+
+        <script src="task31.js"></script>  
+</body>
+</html>
